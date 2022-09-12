@@ -10,7 +10,7 @@ protected:
 public:
 	WrongCat();
 	WrongCat(const WrongCat &other);
-	WrongCat &operator=(const WrongCat &lhs);
+	WrongCat &operator=(const WrongCat &rhs);
 	~WrongCat();
 	void makeSound() const;
 };

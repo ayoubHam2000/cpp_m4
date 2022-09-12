@@ -10,10 +10,10 @@ Animal::Animal(const Animal &other): _type(other._type)
 	std::cout << "Copy Constructor Animal" << std::endl;
 }
 
-Animal &Animal::operator=(const Animal &lhs)
+Animal &Animal::operator=(const Animal &rhs)
 {
 	std::cout << "Assignment Animal" << std::endl;
-	this->_type = lhs._type;
+	this->_type = rhs._type;
 	return (*this);
 }
 

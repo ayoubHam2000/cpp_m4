@@ -14,11 +14,11 @@ Dog::Dog(const Dog &other): Animal(other)
 	std::cout << "Copy Constructor Dog" << std::endl;
 }
 
-Dog &Dog::operator=(const Dog &lhs)
+Dog &Dog::operator=(const Dog &rhs)
 {
-	*this->_brain = *lhs._brain;
+	*this->_brain = *rhs._brain;
 	std::cout << "Assignment Dog" << std::endl;
-	Animal::operator=(lhs);
+	Animal::operator=(rhs);
 	return (*this);
 }
 

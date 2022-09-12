@@ -12,11 +12,11 @@ Brain::Brain(const Brain &other)
 		this->_ideas[i] = other._ideas[i];
 }
 
-Brain &Brain::operator=(const Brain &lhs)
+Brain &Brain::operator=(const Brain &rhs)
 {
 	std::cout << "Assignment Brain" << std::endl;
 	for (int i = 0; i != 100; ++i)
-		this->_ideas[i] = lhs._ideas[i];
+		this->_ideas[i] = rhs._ideas[i];
 	return (*this);
 }
 

@@ -10,10 +10,10 @@ WrongCat::WrongCat(const WrongCat &other): _type(other._type)
 	std::cout << "Copy Constructor WrongCat" << std::endl;
 }
 
-WrongCat &WrongCat::operator=(const WrongCat &lhs)
+WrongCat &WrongCat::operator=(const WrongCat &rhs)
 {
 	std::cout << "Assignment WrongCat" << std::endl;
-	this->_type = lhs._type;
+	this->_type = rhs._type;
 	return (*this);
 }
 

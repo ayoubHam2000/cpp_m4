@@ -10,10 +10,10 @@ WrongAnimal::WrongAnimal(const WrongAnimal &other): _type(other._type)
 	std::cout << "Copy Constructor WrongAnimal" << std::endl;
 }
 
-WrongAnimal &WrongAnimal::operator=(const WrongAnimal &lhs)
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &rhs)
 {
 	std::cout << "Assignment WrongAnimal" << std::endl;
-	this->_type = lhs._type;
+	this->_type = rhs._type;
 	return (*this);
 }
 

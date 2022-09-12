@@ -11,10 +11,10 @@ Cat::Cat(const Cat &other): Animal(other)
 	std::cout << "Copy Constructor Cat" << std::endl;
 }
 
-Cat &Cat::operator=(const Cat &lhs)
+Cat &Cat::operator=(const Cat &rhs)
 {
 	std::cout << "Assignment Cat" << std::endl;
-	Animal::operator=(lhs);
+	Animal::operator=(rhs);
 	return (*this);
 }
 
